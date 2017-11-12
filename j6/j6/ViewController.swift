@@ -13,13 +13,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        demo(x:10,y:20)
+        
+}
+    func demo(x:Int?,y:Int?){
+        let name : String? = "老王"
+        print((name ?? "")+"你好")
+        print（name ?? "" + "你好"）
+        print（（x ?? 0）+ (y ?? 0)）
+    
+        
     }
+    
+        
+        
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        
+    
+    
+
+   
 
 
 }
-
